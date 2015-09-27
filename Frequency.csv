@@ -1,0 +1,183 @@
+A1,Games Played
+A2,Class
+A3,1
+A4,2
+A5,3
+A6,4
+A7,5
+A8,6
+A9,7
+A11,Strikeouts
+A12,Class
+A13,1
+A14,2
+A15,3
+A16,4
+A17,5
+A18,6
+A19,7
+A21,Averages
+A22,Class
+A23,1
+A24,2
+A25,3
+A26,4
+A27,5
+A28,6
+A29,7
+B2,Lower Limit
+B3,=MIN(Data!D:D)
+B4,=B3+$J$2
+B5,=B4+$J$2
+B6,=B5+$J$2
+B7,=B6+$J$2
+B8,=B7+$J$2
+B9,=B8+$J$2
+B12,Lower Limit
+B13,=MIN(Data!E:E)
+B14,=B13+$J$12
+B15,=B14+$J$12
+B16,=B15+$J$12
+B17,=B16+$J$12
+B18,=B17+$J$12
+B19,=B18+$J$12
+B22,Lower Limit
+B23,=MIN(Data!F:F)
+B24,=B23+$J$22
+B25,=B24+$J$22
+B26,=B25+$J$22
+B27,=B26+$J$22
+B28,=B27+$J$22
+B29,=B28+$J$22
+C2,Upper Limit
+C3,=B3+$J$2-1
+C4,=B4+$J$2-1
+C5,=B5+$J$2-1
+C6,=B6+$J$2-1
+C7,=B7+$J$2-1
+C8,=B8+$J$2-1
+C9,=B9+$J$2-1
+C12,Upper Limit
+C13,=B13+$J$12-1
+C14,=B14+$J$12-1
+C15,=B15+$J$12-1
+C16,=B16+$J$12-1
+C17,=B17+$J$12-1
+C18,=B18+$J$12-1
+C19,=B19+$J$12-1
+C22,Upper Limit
+C23,"=""<""&B23+$J$22"
+C24,"=""<""&B24+$J$22"
+C25,"=""<""&B25+$J$22"
+C26,"=""<""&B26+$J$22"
+C27,"=""<""&B27+$J$22"
+C28,"=""<""&B28+$J$22"
+C29,"=""<""&B29+$J$22"
+D2,Midpoint
+D3,=AVERAGE(B3:C3)
+D4,=AVERAGE(B4:C4)
+D5,=AVERAGE(B5:C5)
+D6,=AVERAGE(B6:C6)
+D7,=AVERAGE(B7:C7)
+D8,=AVERAGE(B8:C8)
+D9,=AVERAGE(B9:C9)
+D12,Midpoint
+D13,=AVERAGE(B13:C13)
+D14,=AVERAGE(B14:C14)
+D15,=AVERAGE(B15:C15)
+D16,=AVERAGE(B16:C16)
+D17,=AVERAGE(B17:C17)
+D18,=AVERAGE(B18:C18)
+D19,=AVERAGE(B19:C19)
+D22,Midpoint
+D23,"=AVERAGE(B23,VALUE(RIGHT(C23,LEN(C23)-1)))"
+D24,"=AVERAGE(B24,VALUE(RIGHT(C24,LEN(C24)-1)))"
+D25,"=AVERAGE(B25,VALUE(RIGHT(C25,LEN(C25)-1)))"
+D26,"=AVERAGE(B26,VALUE(RIGHT(C26,LEN(C26)-1)))"
+D27,"=AVERAGE(B27,VALUE(RIGHT(C27,LEN(C27)-1)))"
+D28,"=AVERAGE(B28,VALUE(RIGHT(C28,LEN(C28)-1)))"
+D29,"=AVERAGE(B29,VALUE(RIGHT(C29,LEN(C29)-1)))"
+E2,Frequency
+E3,"=COUNTIFS(Data!D:D,"">=""&B3,Data!D:D,""<=""&C3)"
+E4,"=COUNTIFS(Data!D:D,"">=""&B4,Data!D:D,""<=""&C4)"
+E5,"=COUNTIFS(Data!D:D,"">=""&B5,Data!D:D,""<=""&C5)"
+E6,"=COUNTIFS(Data!D:D,"">=""&B6,Data!D:D,""<=""&C6)"
+E7,"=COUNTIFS(Data!D:D,"">=""&B7,Data!D:D,""<=""&C7)"
+E8,"=COUNTIFS(Data!D:D,"">=""&B8,Data!D:D,""<=""&C8)"
+E9,"=COUNTIFS(Data!D:D,"">=""&B9,Data!D:D,""<=""&C9)"
+E12,Frequency
+E13,"=COUNTIFS(Data!E:E,"">=""&B13,Data!E:E,""<=""&C13)"
+E14,"=COUNTIFS(Data!E:E,"">=""&B14,Data!E:E,""<=""&C14)"
+E15,"=COUNTIFS(Data!E:E,"">=""&B15,Data!E:E,""<=""&C15)"
+E16,"=COUNTIFS(Data!E:E,"">=""&B16,Data!E:E,""<=""&C16)"
+E17,"=COUNTIFS(Data!E:E,"">=""&B17,Data!E:E,""<=""&C17)"
+E18,"=COUNTIFS(Data!E:E,"">=""&B18,Data!E:E,""<=""&C18)"
+E19,"=COUNTIFS(Data!E:E,"">=""&B19,Data!E:E,""<=""&C19)"
+E22,Frequency
+E23,"=COUNTIFS(Data!F:F,"">=""&B23,Data!F:F,C23)"
+E24,"=COUNTIFS(Data!F:F,"">=""&B24,Data!F:F,C24)"
+E25,"=COUNTIFS(Data!F:F,"">=""&B25,Data!F:F,C25)"
+E26,"=COUNTIFS(Data!F:F,"">=""&B26,Data!F:F,C26)"
+E27,"=COUNTIFS(Data!F:F,"">=""&B27,Data!F:F,C27)"
+E28,"=COUNTIFS(Data!F:F,"">=""&B28,Data!F:F,C28)"
+E29,"=COUNTIFS(Data!F:F,"">=""&B29,Data!F:F,C29)"
+F2,Relative Frequency
+F3,=E3/$J$3
+F4,=E4/$J$3
+F5,=E5/$J$3
+F6,=E6/$J$3
+F7,=E7/$J$3
+F8,=E8/$J$3
+F9,=E9/$J$3
+F12,Relative Frequency
+F13,=E13/$J$13
+F14,=E14/$J$13
+F15,=E15/$J$13
+F16,=E16/$J$13
+F17,=E17/$J$13
+F18,=E18/$J$13
+F19,=E19/$J$13
+F22,Relative Frequency
+F23,=E23/$J$23
+F24,=E24/$J$23
+F25,=E25/$J$23
+F26,=E26/$J$23
+F27,=E27/$J$23
+F28,=E28/$J$23
+F29,=E29/$J$23
+G2,Cumulative Frequency
+G3,=SUM($F$3:F3)
+G4,=SUM($F$3:F4)
+G5,=SUM($F$3:F5)
+G6,=SUM($F$3:F6)
+G7,=SUM($F$3:F7)
+G8,=SUM($F$3:F8)
+G9,=SUM($F$3:F9)
+G12,Cumulative Frequency
+G13,=SUM($F$13:F13)
+G14,=SUM($F$13:F14)
+G15,=SUM($F$13:F15)
+G16,=SUM($F$13:F16)
+G17,=SUM($F$13:F17)
+G18,=SUM($F$13:F18)
+G19,=SUM($F$13:F19)
+G22,Cumulative Frequency
+G23,=SUM($F$23:F23)
+G24,=SUM($F$23:F24)
+G25,=SUM($F$23:F25)
+G26,=SUM($F$23:F26)
+G27,=SUM($F$23:F27)
+G28,=SUM($F$23:F28)
+G29,=SUM($F$23:F29)
+I2,Class Width:
+I3,Data Points:
+J2,"=IF(MIN(Data!D:D)+7*CEILING.MATH((MAX(Data!D:D)-MIN(Data!D:D))/7)=MAX(Data!D:D),CEILING.MATH((MAX(Data!D:D)-MIN(Data!D:D))/7)+1,CEILING.MATH((MAX(Data!D:D)-MIN(Data!D:D))/7))"
+J3,"=COUNTIF(Data!D:D,"">0"")"
+I12,Class Width:
+I13,Data Points:
+J12,"=IF(MIN(Data!E:E)+7*CEILING.MATH((MAX(Data!E:E)-MIN(Data!E:E))/7)=MAX(Data!E:E),CEILING.MATH((MAX(Data!E:E)-MIN(Data!E:E))/7)+1,CEILING.MATH((MAX(Data!E:E)-MIN(Data!E:E))/7))"
+J13,"=COUNTIF(Data!E:E,"">0"")"
+I22,Class Width:
+I23,Data Points:
+J22,"=ROUNDUP((MAX(Data!F:F)-MIN(Data!F:F))/7,2)"
+J23,"=COUNTIF(Data!F:F,"">0"")"
