@@ -35,7 +35,7 @@ listToDelete = []
 
 # If player has <20 at bats or is a pitcher, they are marked for removal
 for player in playerList:
-    if int(player.get("ab")) < 20:
+    if int(player.get("ab")) < 40:
         listToDelete.append(player)
     else:
         if player.get("pos") == "P":
@@ -107,7 +107,5 @@ for key, val in csv.reader(open("Frequency.csv")):
 frequencySheet.merge_cells("A1:G1")
 frequencySheet.merge_cells("A11:G11")
 frequencySheet.merge_cells("A21:G21")
-
-
 
 wb.save("test.xlsx")
