@@ -35,7 +35,7 @@ listToDelete = []
 
 # If player has <20 at bats or is a pitcher, they are marked for removal
 for player in playerList:
-    if int(player.get("ab")) < 40:
+    if int(player.get("ab")) < 20:
         listToDelete.append(player)
     else:
         if player.get("pos") == "P":
