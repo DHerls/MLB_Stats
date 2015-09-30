@@ -179,5 +179,5 @@ J12,"=IF(MIN(Data!E:E)+7*CEILING.MATH((MAX(Data!E:E)-MIN(Data!E:E))/7)=MAX(Data!
 J13,"=COUNTIF(Data!E:E,"">0"")"
 I22,Class Width:
 I23,Data Points:
-J22,"=ROUNDUP((MAX(Data!F:F)-MIN(Data!F:F))/7,2)"
+J22,"=ROUNDUP((MAX(Data!F:F)-MIN(Data!F:F))/7,3)"
 J23,"=COUNTIF(Data!F:F,"">0"")"
